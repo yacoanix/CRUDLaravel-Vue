@@ -11,7 +11,7 @@
 
     </head>
     <body>
-        <div id="main" class="container">
+        <div class="container">
             @yield('content')
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>

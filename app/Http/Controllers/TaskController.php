@@ -51,7 +51,7 @@ class TaskController extends Controller
         //formulario
         return $task;
     }
-    
+
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
