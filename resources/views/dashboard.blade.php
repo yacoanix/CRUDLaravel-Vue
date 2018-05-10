@@ -25,7 +25,7 @@
                         <td width="10px">@{{ keep.id }}</td>
                         <td>@{{ keep.keep }}</td>
                         <td width="10px">
-                            <a href="#" class="btn btn-warning btn-sm">Editar</a>
+                            <a href="#" class="btn btn-warning btn-sm" @click.prevent="editKeep(keep)">Editar</a>
                         </td>
                         <td width="10px">
                             <a href="#" class="btn btn-danger btn-sm" @click.prevent="deleteKeep(keep)">Eliminar</a>
@@ -35,6 +35,7 @@
                 </tbody>
             </table>
             @include('create')
+            @include('edit')
         </div>
         <div class="col-sm-5">
             <pre>
