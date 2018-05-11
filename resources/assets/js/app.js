@@ -1,4 +1,4 @@
-new Vue({
+var algo = new Vue({
     el: '#crud',
     created: function(){
         this.getKeeps();
@@ -64,3 +64,6 @@ new Vue({
     }
 
 });
+
+
+

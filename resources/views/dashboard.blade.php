@@ -2,16 +2,16 @@
 
 @section('content')
 
-    <div id="crud" class="row">
-        <div class="col-xs-12">
-            <h1 class="page-header">CRUD laravel y Vue</h1>
-        </div>
-        <div class="col-sm-7">
-            <a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#create">
-                Nueva tarea
-            </a>
-            <table class="table table-hover table-striped">
-                <thead>
+        <div id="crud" class="row">
+            <div class="col-xs-12">
+                <h1 class="page-header">CRUD laravel y Vue</h1>
+            </div>
+            <div class="col-sm-7">
+                <a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#create">
+                    Nueva tarea
+                </a>
+                <table class="table table-hover table-striped">
+                    <thead>
                     <tr>
                         <th>ID</th>
                         <th>Tarea</th>
@@ -19,8 +19,8 @@
                             &nbsp;
                         </th>
                     </tr>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     <tr v-for="keep in keeps">
                         <td width="10px">@{{ keep.id }}</td>
                         <td>@{{ keep.keep }}</td>
@@ -32,16 +32,16 @@
                         </td>
 
                     </tr>
-                </tbody>
-            </table>
-            @include('create')
-            @include('edit')
-        </div>
-        <div class="col-sm-5">
+                    </tbody>
+                </table>
+                @include('create')
+                @include('edit')
+            </div>
+            <div class="col-sm-5">
             <pre>
                 @{{ keeps }}
             </pre>
+            </div>
         </div>
-    </div>
 
 @endsection

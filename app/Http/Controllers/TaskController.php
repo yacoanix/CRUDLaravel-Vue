@@ -37,7 +37,7 @@ class TaskController extends Controller
             'keep' => 'required'
         ]);
         Task::where('id',$id)->update($request->all());
-        
+
         return;
     }
 

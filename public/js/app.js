@@ -14821,7 +14821,7 @@ if (typeof jQuery === 'undefined') {
 });
 ;
 //# sourceMappingURL=axios.map
-new Vue({
+var algo = new Vue({
     el: '#crud',
     created: function(){
         this.getKeeps();
@@ -14887,3 +14887,6 @@ new Vue({
     }
 
 });
+
+
+
